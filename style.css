@@ -1,0 +1,35 @@
+#gsearch{
+    width: 81%;
+    padding: 1.5%;   
+    background: gray;   
+    border: 2px solid gray;
+    font-size: 1.1em;
+    color: white;
+}
+#btnsearch{
+    padding: 1.5%;
+    color: black;
+    width:14%;
+    float: right;    
+    height:inherit;
+    font-size: 1.1em;
+    width: 19%;
+        
+  
+}
+#searchbar{
+    margin: 3% auto;
+    border: 2px solid aqua;
+    background: gray;  
+    width: 40%;
+}
+#message{
+    margin: 0 auto;
+    padding: 2%;   
+    width: 90%;
+}
+#message img{
+  
+    margin:20px auto;
+    
+}
