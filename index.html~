@@ -13,11 +13,38 @@
 	<body>
 		<div class="container">
 			<!-- Top Navigation -->
-            <form id="googleSearch">
+           
              <div id="searchbar">
-                <input id="gsearch" type="text" value="Google"/> <input id="btnsearch" type="submit" value="Search" onclick="Search();"/>  
+                <input id="gsearch" type="text" value="Google" onfocus="javascript:this.value=''" onblur="javascript: if(this.value==''){this.value='Google';}"/> <input id="btnsearch" type="submit" value="Search" onclick="myFunction()" />  
             </div>
-            </form>
+            
+<script>
+function myFunction() {   
+    var queary=document.getElementById("gsearch").value;
+    if(queary!="Google")
+    queary= "https://www.google.co.in/search?q="+queary;
+    else
+        queary="https://www.google.co.in"
+   
+    
+   window.location.href=queary;
+   
+}
+</script>
+            <div id="message">    
+                <img src="http://www.heathersanimations.com/xmas/fatsign.gif"/>
+                 <img src="http://www.heathersanimations.com/xmas/fatsign.gif"/>
+                 <img src="http://www.heathersanimations.com/xmas/fatsign.gif"/>
+                 <img src="http://www.heathersanimations.com/xmas/fatsign.gif"/>
+                 <img src="http://www.heathersanimations.com/xmas/fatsign.gif"/>
+                 <img src="http://www.heathersanimations.com/xmas/fatsign.gif"/>
+                 <img src="http://www.heathersanimations.com/xmas/fatsign.gif"/>
+                 <img src="http://www.heathersanimations.com/xmas/fatsign.gif"/>
+                 <img src="http://www.heathersanimations.com/xmas/fatsign.gif"/>
+                 <img src="http://www.heathersanimations.com/xmas/fatsign.gif"/>
+                
+            </div>    
+            
      
    
 		
@@ -27,11 +54,11 @@
 				<button class="cn-button" id="cn-button">+</button>
 				<div class="cn-wrapper" id="cn-wrapper">
 				    <ul>
-				      <li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-				      <li><a href="#"><i class="fa fa-google"></i></a></li>
-				      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-				      <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-				      <li><a href="#"><i class="fa fa-music"></i></a></li>
+				      <li><a href="https://github.com/asarkar1990/myhomepage"><i class="fa fa-github-alt"></i></a></li>
+				      <li><a href="https://www.google.co.in/"><i class="fa fa-google"></i></a></li>
+				      <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+				      <li><a href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i></a></li>
+				      <li><a href="http://gaana.com/"><i class="fa fa-music"></i></a></li>
 				     </ul>
 				</div>
 				<div id="cn-overlay" class="cn-overlay"></div>
